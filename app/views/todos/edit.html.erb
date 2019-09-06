@@ -1,0 +1,5 @@
+<%= form_with model: @todo, local: true do |f| %>
+    <%= f.text_area :description, :size => "70x20"  %>
+
+ <%= f.submit "Guardar" %>
+<% end %>

@@ -1,0 +1,16 @@
+<% @todos.each do |todo| %>
+    <div class="card">
+        <div class="card-body">
+            <%= link_to todo.description, todo %>
+            <% if  todo.completed == true %>
+        
+            Tarea completada
+            <% else %>
+
+            <%= link_to "completar", todo_completo_path(todo) %>
+            <% end %>
+
+        </div>
+    </div>
+<% end %>
+<%= link_to "Crear", todos_new_path %>
