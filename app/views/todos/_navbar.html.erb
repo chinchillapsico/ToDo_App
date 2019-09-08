@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">To Do</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav  nav mr-auto">
+      <li class="nav-item px-5">
+        <a class="nav-link" href="<%= link_to 'Inicio', root_path %>"></a>
+      </li>
+      <li class="nav-item px-5">
+        
+        <a class="nav-link" href="<%= link_to 'Crear', todos_new_path %>"></a>
+      </li>
+      <li class="nav-item px-5">
+        <a class="nav-link" href="<%= link_to 'Lista', todos_lista_path %>"></a>
+      </li>
+    </ul>
+  </div>
+</nav>

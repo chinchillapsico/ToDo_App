@@ -1,6 +1,5 @@
-
-<%= form_with model: @todo, local: true do |f| %>
-    <%= f.text_field :description %>
-
- <%= f.submit "Crear" %>
-<% end %>
+<div class="row my-5 py-3">
+    <%= render 'todos/navbar' %>
+    <%= render 'todos/form' %>
+   
+</div>

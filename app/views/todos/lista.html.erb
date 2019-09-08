@@ -1,0 +1,16 @@
+<%= render 'todos/navbar' %>
+<div class="row my-5 py-3">
+    <div class="card my-1 col-md-6 col-sm-12">
+        <h1>Completados</h1>
+    <% @todos_completos.each do |t| %>
+        <%= t.description %><br>
+    <% end %>
+    </div>
+
+    <div class="card my-1 col-md-6 col-sm-12">
+        <h1>No Completados</h1>
+    <% @todos_incompletos.each do |t| %>
+        <%= t.description %><br>
+    <% end %>
+    </div>
+</div>
