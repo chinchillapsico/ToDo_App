@@ -19,6 +19,9 @@
                     <button type="button" class="btn btn-outline-danger">
                         <%= link_to "Borrar", todo, method: :delete %>
                     </button>
+                    <button type="button" class="btn btn-outline-info">
+                        <%= link_to "Editar", todos_edit_path(todo) %>
+                    </button> 
                     <% end %>
                     
                 </div>
