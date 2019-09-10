@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'todos_completed/:id', to: 'todos#completed', as: 'todo_completed'
   patch 'todos/:id', to: 'todos#update'
   delete 'todos/:id', to: 'todos#destroy'
-  get 'todos/lista', to: 'todos#lista'
+  get '/todos_lista', to: 'todos#lista'
 
   #-------de esa manera de hacen las rutas-------
   #--------para refactorizar---------
